@@ -38,11 +38,3 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
-
-sonarqube {
-    properties {
-        property("sonar.projectKey", "mrbusche_bridges-checker")
-        property("sonar.organization", "mrbusche")
-        property("sonar.host.url", "https://sonarcloud.io")
-    }
-}
