@@ -17,6 +17,6 @@ class CheckerApplicationTests extends Specification {
         when:
         int reviewCount = checkerService.retrieveCount(Checker.EBOOKS)
         then:
-        reviewCount == 1
+        reviewCount == 0
     }
 }
