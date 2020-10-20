@@ -10,13 +10,13 @@ class CheckerApplicationTests extends Specification {
         when:
         int reviewCount = checkerService.retrieveCount(Checker.AUDIOBOOKS)
         then:
-        reviewCount == 0
+        reviewCount == 4
     }
 
     def "test ebooks"() throws IOException {
         when:
         int reviewCount = checkerService.retrieveCount(Checker.EBOOKS)
         then:
-        reviewCount == 0
+        reviewCount == 2
     }
 }
