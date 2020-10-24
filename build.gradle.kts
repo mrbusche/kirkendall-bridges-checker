@@ -17,17 +17,12 @@ repositories {
     maven { url = uri("https://repo.spring.io/milestone") }
 }
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web") {
-        exclude("com.fasterxml.jackson.core")
-        exclude("com.fasterxml.jackson.datatype")
-        exclude("com.fasterxml.jackson.module")
-    }
     implementation("org.springframework.boot:spring-boot-starter")
-    testImplementation("org.springframework.boot:spring-boot-starter-test") {
-        exclude("org.junit.vintage", "junit-vintage-engine")
-    }
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
     implementation("org.jsoup:jsoup:1.13.1")
-    implementation("org.apache.commons:commons-lang3")
 }
 tasks.withType<Test> {
     useJUnitPlatform()
