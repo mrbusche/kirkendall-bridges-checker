@@ -8,11 +8,11 @@ internal class CheckerApplicationTests {
 
     @Test
     fun `Test New AudioBook Counts`() {
-        assertEquals(10, CheckerService.retrieveNewBookCount(audioBooksURL))
+        assertEquals(0, CheckerService.retrieveNewBookCount(audioBooksURL))
     }
 
     @Test
     fun `Test New eBook Counts`() {
-        assertEquals(8, CheckerService.retrieveNewBookCount(ebooksURL))
+        assertEquals(0, CheckerService.retrieveNewBookCount(ebooksURL))
     }
 }
