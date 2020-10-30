@@ -13,6 +13,6 @@ internal class CheckerApplicationTests {
 
     @Test
     fun `Test New eBook Counts`() {
-        assertEquals(0, CheckerService.retrieveNewBookCount(ebooksURL))
+        assertEquals(1, CheckerService.retrieveNewBookCount(ebooksURL))
     }
 }
