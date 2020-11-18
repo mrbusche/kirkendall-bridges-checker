@@ -8,17 +8,17 @@ internal class CheckerApplicationTests {
 
     @Test
     fun `Test New AudioBook Counts`() {
-        val newBooks = CheckerService.retrieveNewBookCount(audioBooksURL)
-        if (newBooks != 0) {
-            assertEquals(0, newBooks)
+        val audiobooks = CheckerService.retrieveNewBookCount(audioBooksURL)
+        if (audiobooks != 0) {
+            assertEquals(27, audiobooks)
         }
     }
 
     @Test
     fun `Test New eBook Counts`() {
-        val newBooks = CheckerService.retrieveNewBookCount(ebooksURL)
-        if (newBooks != 0) {
-            assertEquals(0, newBooks)
+        val ebooks = CheckerService.retrieveNewBookCount(ebooksURL)
+        if (ebooks != 0) {
+            assertEquals(18, ebooks)
         }
     }
 }
