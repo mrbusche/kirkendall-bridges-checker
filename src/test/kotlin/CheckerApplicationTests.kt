@@ -18,7 +18,7 @@ internal class CheckerApplicationTests {
     fun `Test New eBook Counts`() {
         val ebooks = CheckerService.retrieveNewBookCount(ebooksURL)
         if (ebooks != 0) {
-            assertEquals(23, ebooks)
+            assertEquals(40, ebooks)
         }
     }
 }
