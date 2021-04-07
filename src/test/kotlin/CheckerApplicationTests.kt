@@ -5,12 +5,14 @@ import org.junit.jupiter.api.Test
 internal class CheckerApplicationTests {
     private val audioBooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37479"
     private val ebooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37473"
+    private val audioCount = 29
+    private val eBookCount = 47
 
     @Test
     fun `Test New AudioBook Counts`() {
         val audiobooks = CheckerService.retrieveNewBookCount(audioBooksURL)
         if (audiobooks != 0) {
-            assertEquals(25, audiobooks)
+            assertEquals(audioCount, audiobooks)
         }
     }
 
@@ -18,7 +20,7 @@ internal class CheckerApplicationTests {
     fun `Test New eBook Counts`() {
         val ebooks = CheckerService.retrieveNewBookCount(ebooksURL)
         if (ebooks != 0) {
-            assertEquals(32, ebooks)
+            assertEquals(eBookCount, ebooks)
         }
     }
 }
