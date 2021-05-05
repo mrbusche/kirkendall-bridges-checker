@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test
 internal class CheckerApplicationTests {
     private val audioBooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37479"
     private val ebooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37473"
-    private val audioCount = 56
-    private val eBookCount = 68
+    private val audioCount = 79
+    private val eBookCount = 92
 
     @Test
     fun `Test New AudioBook Counts`() {
