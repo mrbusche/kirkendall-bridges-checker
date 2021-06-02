@@ -6,7 +6,7 @@ internal class CheckerApplicationTests {
     private val audioBooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37479"
     private val ebooksURL = "https://bridges.overdrive.com/bridges-kirkendall/content/collection/37473"
     private val audioCount = 97
-    private val eBookCount = 127
+    private val eBookCount = 128
 
     @Test
     fun `Test New AudioBook Counts`() {
