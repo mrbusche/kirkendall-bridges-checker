@@ -1,3 +1,7 @@
+# Archived
+
+Checks have been moved to [random-website-checker](https://github.com/mrbusche/random-website-checker)
+
 # kirkendall-bridges-checker
 
 Monitors the following URLs for changes
